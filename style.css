@@ -1,0 +1,79 @@
+/* Basic reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Button to open panel */
+#open-btn {
+    position: fixed;
+    top: 15px;
+    left: 0px;
+    background: rgba(245, 245, 247, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Side Panel (Initially Hidden) */
+#side-panel {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.671);
+    color: rgb(255, 255, 255);
+    padding-top: 60px;
+    transition: 0.3s;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Close button */
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* Side Panel Links */
+#side-panel a {
+    display: block;
+    color: rgba(255, 255, 255, 0.753);
+    text-decoration: none;
+    padding: 30px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+#side-panel a:hover {
+    background: rgba(0, 0, 0, 0.774);
+}
+
+/* Open panel effect */
+#side-panel.open {
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+}
+
+.hero {
+    width: 100%;    
+    height: 100vh;
+
+    background-color: rgba(63, 2, 2, 0.80);
+    background-image: url(./Images/poker\ chip.avif);
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: cover; 
+
+}
+
+.hero h2 {
+    color: rgb(8, 8, 8);
+
+    padding: 100px 0 0 100px;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+ 
+
+
+
+
+
+
+
+
+/* General Reset */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header Style */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('./Images/firecards.jpg'); /* Add your image URL here */
+    background-size: cover; /* Ensures the image covers the header */
+    background-position: center; /* Centers the image in the header */
+    background-color: rgba(34, 34, 34, 0.411); /* Semi-transparent dark background to enhance readability */
+    padding: 15px 10px;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 60px; /* Adjust to match header height */
+    background-color: rgba(10, 10, 10, 0.5);
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logo img {
+    width: 150px;
+    height: 50px;
+}
+
+.nav-buttons button {
+    background-color: #cf3a3ae3;
+    color: rgba(255, 255, 255, 0.938);
+    padding: 6px 8px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+.nav-buttons button:hover {
+    background-color: #fff;
+    color: #cf3a3a;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(63, 4, 4);
+    color: white;
+}
+
+/* Carousel Section at the top of the page */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px; /* Default height of the carousel */
+    min-height: 420px; /* Prevents shrinking on smaller devices */
+    position: absolute; /* Sticks it at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensures it stays at the top */
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 60%; /* Adjust the width of the carousel */
+    max-width: 900px;
+    
+    overflow: hidden;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+/* Carousel Images */
+.carousel-image {
+    width: 100%;
+    height: 100%; /* Ensures the images fit within the container */
+    object-fit: cover;
+}
+
+/* Arrow Styles */
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%; /* Center the arrows vertically */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0); /* Make arrows visible */
+    color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 100px;
+    padding: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+/* Prevent images from getting too large */
+.carousel-image {
+    flex-shrink: 0;
+}
+
+/* Media Queries for Smaller Devices */
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .carousel-container {
+        height: 400px; /* Adjust the height of the carousel for tablets */
+        min-height: 300px;
+    }
+
+    .carousel {
+        width: 55%; /* Adjust the width for smaller screens */
+    }
+
+    .arrow-left, .arrow-right {
+        font-size: 60px; /* Smaller arrows on smaller devices */
+        padding: 30px; /* Smaller arrow padding */
+    }
+}
+
+/* For small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .carousel-container {
+        height: 300px; /* Adjust the height for small mobile devices */
+        min-height: 300px;
+    }
+
+    .carousel {
+        width: 55%; /* Even smaller width for smaller screens */
+    }
+
+    .arrow-left, .arrow-right {
+        font-size: 50px; /* Even smaller arrows for small screens */
+        padding: 25px; /* Further reduce padding */
+    }
+}
+
+/* For iPad Pro (11-inch and 12.9-inch) and similar devices (1024px to 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .carousel-container {
+        height: 450px; /* Slightly larger height for iPad Pro */
+        min-height: 420px;
+    }
+
+    .carousel {
+        width: 55%; /* Adjust carousel width to fit larger tablets */
+    }
+
+    .arrow-left, .arrow-right {
+        font-size: 80px; /* Larger arrows for iPad Pro */
+        padding: 35px; /* Adjust padding for better usability */
+    }
+}
+
+/* For Nest Hub Max and similar devices (1024px to 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .carousel-container {
+        height: 520px; /* Larger height for Nest Hub Max and similar devices */
+        min-height: 450px;
+    }
+
+    .carousel {
+        width: 60%; /* Adjust carousel width for larger screens */
+    }
+
+    .arrow-left, .arrow-right {
+        font-size: 90px; /* Larger arrows */
+        padding: 40px; /* Adjust padding */
+    }
+}
